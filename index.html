@@ -1,8 +1,6 @@
-<!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Online Profile">
     <meta name="author" content="Jackil Rajnicant">
 
@@ -115,35 +113,6 @@
         history: true,
         center: true,
         navigationMode: 'grid',
-
-        // Optional reveal.js plugins
-        dependencies: [
-            {
-                src: "static/lib/js/classList.js", condition: function () {
-                    return !document.body.classList;
-                }
-            },
-            {
-                src: "static/plugin/markdown/marked.js", condition: function () {
-                    return !!document.querySelector('[data-markdown]');
-                }
-            },
-            {
-                src: "static/plugin/markdown/markdown.js", condition: function () {
-                    return !!document.querySelector('[data-markdown]');
-                }
-            },
-            {
-                src: "static/plugin/highlight/highlight.js", async: true, condition: function () {
-                    return !!document.querySelector('pre code');
-                }, callback: function () {
-                    hljs.initHighlightingOnLoad();
-                }
-            },
-            {src: "static/plugin/zoom-js/zoom.js", async: true},
-            {src: "static/plugin/notes/notes.js", async: true}
-        ],
-
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
     });
